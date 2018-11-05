@@ -3,6 +3,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := libnx_scaler
+LOCAL_VENDOR_MODULE := true
 
 LOCAL_SRC_FILES := \
 	nx-scaler.c
