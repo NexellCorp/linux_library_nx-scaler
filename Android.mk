@@ -4,6 +4,10 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := libnx_scaler
 
+ifeq ($(BUILD_ID), PI)
+LOCAL_VENDOR_MODULE := true
+endif
+
 LOCAL_SRC_FILES := \
 	nx-scaler.c
 LOCAL_SHARED_LIBRARIES := \
